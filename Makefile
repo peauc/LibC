@@ -1,5 +1,8 @@
 SRC_FILES= 	strcpy.c \
 		strlen.c \
+		memchr.c \
+		memrchr.c\
+		rawmemchr.c\
 
 SRC_DIR= 	src/
 
