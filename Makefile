@@ -1,8 +1,10 @@
-SRC_FILES= 	strcpy.c \
-		strlen.c \
-		memchr.c \
-		memrchr.c\
-		rawmemchr.c\
+SRC_FILES= 	strcpy.c 	\
+		strlen.c 	\
+		memchr.c 	\
+		memrchr.c	\
+		rawmemchr.c	\
+		strdup.c	\
+		memset.c	\
 
 SRC_DIR= 	src/
 
@@ -10,13 +12,17 @@ OBJ_DIR= 	obj/
 
 OBJ	= 	$(addprefix $(OBJ_DIR), $(SRC_FILES:.c=.o))
 
-NAME= 		lib
+NAME	=	lib
 
-MAKEOBJ	= obj
+INCDIR	=	-Iinc/
+
+MAKEOBJ	= 	obj
+
+CFLAGS	=	-W -Wall -Wextra	
 
 $(OBJ_DIR)%.o: $(SRC_DIR)%.c
 		@mkdir -p $(MAKEOBJ)
-		gcc $(INCDIR) -o $@ -c $<
+		gcc $(CFLAGS) $(INCDIR) -o $@ -c $<
 
 $(NAME):	$(OBJ)
 		ar rc $(NAME) $(OBJ)

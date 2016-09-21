@@ -5,19 +5,19 @@
 ** Login   <peau_c@epitech.net>
 ** 
 ** Started on  Tue Sep 20 15:14:12 2016 
-** Last update Tue Sep 20 15:46:45 2016 
+** Last update Wed Sep 21 15:59:39 2016 
 */
 
 #include <stdlib.h>
 
-void	*memrchr(const void *s, int c, size_t n)
+void		*my_memrchr(const void *s, int c, size_t n)
 {
-  int	i;
+  size_t	i;
 
   i = n;
-  while (i > 0 && s + i != c)
+  while (i > 0 && ((unsigned char *)s)[i] != c)
     {
       i++;
     }
-  return (s + i);
+  return ((void *)s + i);
 }
