@@ -5,6 +5,7 @@ SRC_FILES= 	strcpy.c 	\
 		rawmemchr.c	\
 		strdup.c	\
 		memset.c	\
+		wordtab.c	\
 
 SRC_DIR= 	src/
 
@@ -18,7 +19,7 @@ INCDIR	=	-Iinc/
 
 MAKEOBJ	= 	obj
 
-CFLAGS	=	-W -Wall -Wextra	
+CFLAGS	=	-g -W -Wall -Wextra	
 
 $(OBJ_DIR)%.o: $(SRC_DIR)%.c
 		@mkdir -p $(MAKEOBJ)
