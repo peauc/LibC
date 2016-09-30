@@ -7,6 +7,9 @@ SRC_FILES= 	strcpy.c 	\
 		memset.c	\
 		wordtab.c	\
 		puts.c		\
+		isalpha.c	\
+		isdigit.c	\
+		isalnum.c	\
 
 SRC_DIR= 	src/
 
