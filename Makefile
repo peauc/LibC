@@ -6,6 +6,7 @@ SRC_FILES= 	strcpy.c 	\
 		strdup.c	\
 		memset.c	\
 		wordtab.c	\
+		puts.c		\
 
 SRC_DIR= 	src/
 
