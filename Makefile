@@ -1,15 +1,15 @@
-SRC_FILES= 	strcpy.c 	\
-		strlen.c 	\
-		memchr.c 	\
-		memrchr.c	\
-		rawmemchr.c	\
-		strdup.c	\
-		memset.c	\
-		wordtab.c	\
-		puts.c		\
-		isalpha.c	\
-		isdigit.c	\
-		isalnum.c	\
+SRC_FILES= 	string/strcpy.c 	\
+		string/strlen.c 	\
+		string/memchr.c 	\
+		string/memrchr.c	\
+		string/rawmemchr.c	\
+		string/strdup.c		\
+		string/memset.c		\
+		wordtab.c		\
+		stdio/puts.c		\
+		ctype/isalpha.c		\
+		ctype/isdigit.c		\
+		ctype/isalnum.c		\
 
 SRC_DIR= 	src/
 
