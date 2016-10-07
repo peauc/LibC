@@ -7,6 +7,7 @@ SRC_FILES=	string/strcpy.c 	\
 		string/memset.c		\
 		wordtab.c   		\
 		stdio/puts.c		\
+		stdio/putchar.c		\
 		ctype/isalpha.c		\
 		ctype/isdigit.c		\
 		ctype/isalnum.c		\
@@ -29,7 +30,8 @@ CFLAGS =	-g -W -Wall -Wextra
 
 $(OBJ_DIR)%.o:  $(SRC_DIR)%.c
 		@mkdir -p $(MAKEOBJ)
-		gcc $(CFLAGS) $(INCDIR) -o $@ -c $<
+		@gcc $(CFLAGS) $(INCDIR) -o $@ -c $<
+		@echo "$<"
 
 $(NAME):	$(OBJ)
 		ar rc $(NAME) $(OBJ)

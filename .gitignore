@@ -2,3 +2,4 @@
 *.xml
 *.o
 lib
+unittest

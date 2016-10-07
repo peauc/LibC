@@ -5,7 +5,7 @@
 ** Login   <peau_c@epitech.net>
 **
 ** Started on  Wed Sep 21 15:04:29 2016
-** Last update Fri Oct  7 14:09:37 2016 pierre
+** Last update Fri Oct  7 14:35:43 2016 pierre
 */
 
 #ifndef _POCLIB_
@@ -23,5 +23,7 @@ char		*my_strdup(char *);
 int		isalpha(int c);
 int		isdigit(int c);
 int		isalnum(int c);
+
+int		puts(const char *);
 
 #endif
