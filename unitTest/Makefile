@@ -1,4 +1,7 @@
-SRC_FILES =	main.c 	\
+SRC_FILES =	main.c 		\
+		string.c	\
+		stdio.c		\
+		ctype.c		\
 
 SRC_DIR = 	src/
 
