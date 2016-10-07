@@ -17,11 +17,11 @@ void		*my_memchr(const void *, int, size_t);
 void		*my_memrchr(const void *, int, size_t);
 void		*my_rawmemchr(const void *, unsigned char);
 void		my_strcpy(char *, char *);
-int		my_strlen(char *);
+int		    my_strlen(char *);
 char		*my_strdup(char *);
 
-int		isalpha(int c);
-int		isdigit(int c);
-int		isalnum(int c);
+int		    isalpha(int c);
+int		    isdigit(int c);
+int		    isalnum(int c);
 
 #endif
